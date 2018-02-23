@@ -15,7 +15,7 @@
 	mov dx,[0x9000+512];first word from second loaded sector
 	call print_hex
 
-	jmp$
+	jmp $
 
 %include "../bootsector_string_function/boot_sect_print.asm"
 %include "../bootsector_string_function/boot_sect_print_hex.asm"

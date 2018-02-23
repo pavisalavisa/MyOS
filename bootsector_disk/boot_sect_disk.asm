@@ -50,7 +50,7 @@ disk_load:
 
 	pop dx
 	cmp al,dh;al is # of sectors read
-	jmp sectors_error
+	jne sectors_error
 	popa
 	ret
 
